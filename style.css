@@ -1,0 +1,340 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+@font-face
+{
+    font-family: "Gotu";
+/*    background-image: url("233.jpg");*/
+background-image: url("233.jpg");
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Gotu;
+    background-color: #09615a;
+    height: 2000px;
+}
+
+.w-80 {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    padding: 10px 10px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    background: royalblue;
+    float: left;
+}
+
+header .menu {
+    width: 80%;
+    height: 55px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+header .menu .brand-name a {
+    text-decoration: none;
+}
+
+header .menu .brand-name h2 {
+    font-family: serif;
+    font-size: 35px;
+    color: yellowgreen;
+}
+
+header .menu .brand-name {
+    width: 35%;
+    float: left;
+}
+
+header .menu nav {
+    width: 65%;
+    float: left;
+}
+
+header .menu nav ul {
+    list-style: none;
+}
+
+header .menu nav ul li {
+    display: inline-block;
+    margin: 8px 10px;
+    padding: 2px 10px;
+}
+
+header .menu nav ul li:hover {
+    border: none;
+    border-bottom: 3px solid lawngreen;
+}
+
+header .menu nav ul li:hover a {
+    color: #00bcd4;
+}
+
+header .menu nav ul li a {
+    color: navajowhite;
+    text-decoration: none;
+    font-family: Gotu;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: yellow;
+}
+
+section {
+    width: 100%;
+    float: left;
+}
+
+section .section-img {
+    background-image: url(233.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: sepia(0%);
+    border: 1px solid red;
+}
+
+section .section-img:hover {
+    filter: invert(10%);
+}
+
+section .section-bg-box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+section .section-bg-box h1 {
+    background-color: green;
+    color: white;
+    font-size: 30px;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 1px;
+}
+
+section .section-bg-box h2 {
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+    width: 30%;
+    margin: auto;
+}
+
+section .welcome-text {
+    background: orangered;
+    color: white;
+    font-size: 35px;
+    width: 40%;
+    text-transform: capitalize;
+    margin: 20px 15px;
+}
+
+section .welcome-text {
+    background: darkred;
+    color: floralwhite;
+    font-size: 35px;
+    width: 35%;
+    margin: 10px 5px;
+}
+
+section p {
+    text-align: justify;
+    font-size: 22px;
+}
+
+section ul {
+    padding: 0;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+section ul li {
+    font-size: 17px;
+    line-height: 25px;
+}
+
+section .info {
+    background: darkred;
+    color: whitesmoke;
+    width: 15%;
+    font-size: 35px;
+}
+
+section h2 {
+    font-size: 30px;
+}
+
+section .about-box {
+    width: 100%;
+}
+
+section .about-box p {
+    font-size: 18px;
+}
+
+section .about-box div:nth-child(1) {
+    width: 60%;
+    float: left;
+    padding: 10px;
+}
+
+section .about-box div:nth-child(2) {
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+section .form-box h1 {
+    padding: 20px;
+    background-color: #fafa67;
+    width: 22%;
+}
+
+section .form-box h1 {
+    animation-name: head;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes head {
+    50% {
+        color: lawngreen;
+    }
+    100% {
+        color: steelblue;
+    }
+}
+
+section .form-box .gallery {
+    width: 100%;
+    height: 200px;
+    padding: 0 5px;
+}
+
+section .form-box .gallery div {
+    width: 25%;
+    height: 150px;
+    padding: 10px;
+    float: left;
+}
+
+section .form-box .gallery div img {
+    border-radius: 20px;
+    width: 85%;
+    height: 200px;
+    padding: 5px;
+    float: left;
+    background-color: peachpuff;
+}
+
+section .form-box form {
+    margin-top: 20px;
+}
+
+section .form-box input: focus,
+textarea: focus,
+button: focus {
+    outline: none;
+    border: none;
+}
+
+section .form-box input,
+textarea {
+    margin-top: 0 10px;
+    width: 36%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: arial;
+    font-size: 16px;
+}
+
+section .form-box form #register-btn,
+#loginID-btn,
+#contact-btn {
+    color: white;
+    font-family: serif;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    background: #05e1fa;
+}
+
+textarea {
+    height: 100px;
+}
+
+section .form-box form #loginID-btn {
+    background: darkred;
+}
+
+section .form-box form #loginID-btn:hover {
+    background: #f5ab62;
+}
+
+section .form-box form #register-btn:hover {
+    background: #f6fa16;
+}
+
+section .form-box form #contact-btn:hover {
+    background: #f56462;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background: black;
+    float: left;
+    color: white;
+    padding: 30px 0px;
+}
+
+footer .footer-box {
+    width: 25%;
+    font-size: 15px;
+    float: left;
+    height: 100%;
+}
+
+footer .footer-box a {
+    display: block;
+    font-family: Gotu;
+    color: purple;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+footer .footer-box a:hover {
+    text-decoration: none;
+    color: yellow;
+}
